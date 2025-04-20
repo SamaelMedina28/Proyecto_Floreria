@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--? SEO -->
+    <meta name="description" content="Floreria">
+    <meta name="keywords" content="Floreria, flores, ramos, servicios, ubicacion, contacto, pedir flores, Tijuana, México">
+    <meta name="author" content="@DevCode">
+    <meta name="theme-color" content="#744a39">
     <title>Floreria</title>
-    <!-- Font Awesome -->
+    <!--? Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- Google Fonts -->
+    <!--? Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 
-    <!-- Own -->
-    <script defer type="text/javascript" src="script.js"></script>
+    <!--? Own -->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/flores.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -50,7 +57,53 @@
             </div>
             <button class="btn">Pedir flores</button>
         </section>
-        
+        <!-- ? Flores -->
+        <section class="flores">
+            <h3 class="flores-title">Galería de Flores</h3>
+            <div class="slider-container">
+                <button class="slider-btn prev">&#10094;</button>
+                <div class="slider">
+                    <div class="slide">
+                        <div class="slide-inner">
+                            <img src="sources/flor1.jpg" alt="Flor 1">
+                            <span>Flores Variadas</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-inner">
+                            <img src="sources/tulipanes.jpg" alt="Tulipanes">
+                            <span>Tulipanes</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-inner">
+                            <img src="sources/girasol.jpg" alt="Girasol">
+                            <span>Girasol</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-inner">
+                            <img src="sources/hero_photo.jpg" alt="Rosas">
+                            <span>Rosas</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-inner">
+                            <img src="sources/flor2.jpg" alt="Petunias">
+                            <span>Petunias</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-inner">
+                            <img src="sources/rosa.jpg" alt="Rosas Rojas">
+                            <span>Rosas Rojas</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next">&#10095;</button>
+            </div>
+        </section>
+
     </main>
 
     <!-- ! Footer -->
