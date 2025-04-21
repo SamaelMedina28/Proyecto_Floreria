@@ -6,7 +6,7 @@
 
 }
 
-.flores-title {
+.section-title {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
@@ -16,7 +16,7 @@
 
 }
 
-.flores-title::after {
+.section-title::after {
     content: '';
     position: absolute;
     bottom: -8px;
@@ -67,8 +67,9 @@
     display: block;
     padding: 0.8rem;
     text-align: center;
-    font-weight: 600;
+    font-size: 1.1rem;
     color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .slider-btn {

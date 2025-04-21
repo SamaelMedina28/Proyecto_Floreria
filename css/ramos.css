@@ -85,7 +85,10 @@
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
-
+.cta-button:hover {
+    background: var(--primary-color);
+    transform: scale(1.05);
+}
 @media (min-width: 860px) {
     .cta-button {
         font-size: 1.1rem;
@@ -102,10 +105,4 @@
     }
 
 
-}
-
-
-.cta-button:hover {
-    background: var(--primary-color);
-    transform: scale(1.05);
 }
