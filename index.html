@@ -7,7 +7,8 @@
 
     <!--? SEO -->
     <meta name="description" content="Floreria">
-    <meta name="keywords" content="Floreria, flores, ramos, servicios, ubicacion, contacto, pedir flores, Tijuana, México">
+    <meta name="keywords"
+        content="Floreria, flores, ramos, servicios, ubicacion, contacto, pedir flores, Tijuana, México">
     <meta name="author" content="@DevCode">
     <meta name="theme-color" content="#744a39">
     <title>Floreria</title>
@@ -18,9 +19,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 
-    <!--? Own -->
+    <!--* Own -->
+    <!-- Scripts -->
     <script defer type="text/javascript" src="js/navbar.js"></script>
     <script defer type="text/javascript" src="js/flores.js"></script>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -38,11 +42,11 @@
         </div>
         <nav class="menu" id="main-menu">
             <ul>
-                <li><a href="#" class="menu-link">Flores</a></li>
-                <li><a href="#" class="menu-link">Ramos</a></li>
-                <li><a href="#" class="menu-link">Servicios</a></li>
-                <li><a href="#" class="menu-link">Ubicación</a></li>
-                <li><a href="#" class="menu-link">Contacto</a></li>
+                <li><a href="#flores" class="menu-link">Flores</a></li>
+                <li><a href="#ramos" class="menu-link">Ramos</a></li>
+                <li><a href="#servicios" class="menu-link">Servicios</a></li>
+                <li><a href="#ubicacion" class="menu-link">Ubicación</a></li>
+                <li><a href="#contacto" class="menu-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -55,11 +59,11 @@
                 <h2>Floreria</h2>
                 <p>La mejor floreria de la ciudad</p>
             </div>
-            <button class="btn">Pedir flores</button>
+            <button class="btn" id="flores">Pedir flores</button>
         </section>
         <!-- ? Flores -->
         <section class="flores">
-            <h3 class="flores-title">Galería de Flores</h3>
+            <h3 class="flores-title">Flores</h3>
             <div class="slider-container">
                 <button class="slider-btn prev">&#10094;</button>
                 <div class="slider">
@@ -112,10 +116,81 @@
                         </div>
                     </div>
                 </div>
-                <button class="slider-btn next">&#10095;</button>
+                <button id="ramos" class="slider-btn next">&#10095;</button>
             </div>
         </section>
 
+        <!-- ? Ramos -->
+        <section class="ramos">
+            <h2 class="ramos-title">Nuestra Colección de Ramos</h2>
+            <p class="ramos-subtitle">Descubre nuestra selección premium de flores frescas</p>
+        
+            <div class="ramos-container">
+                <div class="ramos-card">
+                    <div class="card-image-container">
+                        <img class="slide-img" src="sources/flor1.jpg" alt="Flores Variadas">
+                    </div>
+                    <div class="card-footer">
+                        <span>Flores Variadas</span>
+                        <span class="price">Desde $25.00</span>
+                    </div>
+                </div>
+        
+                <div class="ramos-card">
+                    <div class="card-image-container">
+                        <img class="slide-img" src="sources/tulipanes.jpg" alt="Tulipanes">
+                    </div>
+                    <div class="card-footer">
+                        <span>Tulipanes</span>
+                        <span class="price">Desde $30.00</span>
+                    </div>
+                </div>
+        
+                <div class="ramos-card">
+                    <div class="card-image-container">
+                        <img class="slide-img" src="sources/girasol.jpg" alt="Girasol">
+                    </div>
+                    <div class="card-footer">
+                        <span>Girasol</span>
+                        <span class="price">Desde $28.00</span>
+                    </div>
+                </div>
+        
+                <div class="ramos-card">
+                    <div class="card-image-container">
+                        <img class="slide-img" src="sources/hero_photo.jpg" alt="Rosas">
+                    </div>
+                    <div class="card-footer">
+                        <span>Rosas</span>
+                        <span class="price">Desde $35.00</span>
+                    </div>
+                </div>
+        
+                <div class="ramos-card">
+                    <div class="card-image-container">
+                        <img class="slide-img" src="sources/flor2.jpg" alt="Petunias">
+                    </div>
+                    <div class="card-footer">
+                        <span>Petunias</span>
+                        <span class="price">Desde $22.00</span>
+                    </div>
+                </div>
+        
+                <div class="ramos-card">
+                    <div class="card-image-container">
+                        <img class="slide-img" src="sources/rosa.jpg" alt="Rosas Rojas">
+                    </div>
+                    <div class="card-footer">
+                        <span>Rosas Rojas</span>
+                        <span class="price">Desde $40.00</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="ramos-cta">
+                <button class="cta-button">Ver toda la colección</button>
+            </div>
+        </section>
     </main>
 
     <!-- ! Footer -->
