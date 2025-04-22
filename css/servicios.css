@@ -1,13 +1,38 @@
 .servicios-title {
+    position: relative;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    font-size: 2.1rem;
-    font-weight: 400;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px;
+    margin: 60px 0 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
     width: 100%;
+    padding: 0;
+}
+
+.servicios-title::before,
+.servicios-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.servicios-title::before {
+    left: 0;
+}
+
+.servicios-title::after {
+    right: 0;
+}
+
+.servicios-title span {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .servicios-container {
@@ -22,6 +47,7 @@
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 2.4rem;
+    padding-bottom: 2rem;
 }
 
 .servicios-card img {
@@ -52,6 +78,7 @@
     .servicios-card {
         flex-direction: row;
         height: 300px;
+        padding-bottom: 0;
     }
 
     .servicios-card img {
