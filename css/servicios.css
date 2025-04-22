@@ -48,12 +48,7 @@
     padding: 0 2rem;
 }
 
-
 @media (min-width: 720px) {
-    .servicios-container {
-        max-width: 1000px;
-    }
-
     .servicios-card {
         flex-direction: row;
         height: 300px;
@@ -66,40 +61,41 @@
         object-position: center;
     }
 
+    .section-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
     .servicios-card h4 {
         text-align: left;
-        padding: 1rem 1.5rem;
-        padding-bottom: 0;
+        padding: 1rem 1.5rem 0;
     }
 
     .servicios-card p {
         text-align: left;
-        padding: 0 1.5rem 2em 1.5rem;
-        max-width: 70%;
+        padding: 0 1.5rem 2em;
+        width: 85%;
     }
 
-    .right {
+    /* Estilos específicos para las tarjetas derecha */
+    .servicios-card.right {
         flex-direction: row-reverse;
-        text-align: right;
-        justify-content: right;
-        width: 100%;
     }
 
-    .right h4 {
-        text-align: right;
-        padding: 1rem 1.5rem;
-        padding-bottom: 0;
+    .servicios-card.right .section-info {
+        align-items: flex-end;
     }
 
-    .right p {
+    .servicios-card.right h4 {
         text-align: right;
-        padding: 0 0 2em 1.5rem;
-        width: 100%;
-        justify-content: right;
+        padding: 1rem 1.5rem 0;
     }
 
-    .right .section-info {
-        width: 100%
+    .servicios-card.right p {
+        text-align: right;
+        margin-left: auto;
     }
 
     .servicios-card:hover {
