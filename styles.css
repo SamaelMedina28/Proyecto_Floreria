@@ -10,3 +10,19 @@
 /* ? Ramos */
 @import url("css/ramos.css");
 
+/* ? Servicios */
+@import url("css/servicios.css");
+
+/* ? Ubicacion */
+@import url("css/ubicacion.css");
+
+/* ? Contacto */
+@import url("css/contacto.css");
+
+/* ? Footer */
+@import url("css/footer.css");
+
+
+html {
+    scroll-behavior: smooth;
+}
