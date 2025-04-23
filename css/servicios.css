@@ -109,6 +109,7 @@
     /* Estilos específicos para las tarjetas derecha */
     .servicios-card.right {
         flex-direction: row-reverse;
+        overflow: hidden;
     }
 
     .servicios-card.right .section-info {
@@ -126,7 +127,7 @@
     }
 
     .servicios-card:hover {
-        transform: translateY(-5px);
-        box-shadow: var(--shadow-hover);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 10px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
     }
 }

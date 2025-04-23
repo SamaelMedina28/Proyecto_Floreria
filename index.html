@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <!--? WOW.js -->
+    <script src="js/wow.min.js"></script>
+    <!--? Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!--* Own -->
     <!-- Scripts -->
@@ -30,7 +34,7 @@
 
 <body>
     <!-- ! Header -->
-    <header>
+    <header class="wow animate__animated animate__fadeInDown">
         <div class="header-container">
             <div class="logo">
                 <i class="fa-solid fa-leaf"></i>
@@ -56,17 +60,17 @@
         <!-- ? Hero section -->
         <section class="hero">
             <div class="hero-content">
-                <h2>Floreria</h2>
-                <p>La mejor floreria de la ciudad</p>
+                <h2 class=" wow animate__animated animate__fadeInDown">Floreria</h2>
+                <p class=" wow animate__animated animate__fadeIn">La mejor floreria de la ciudad</p>
             </div>
-            <button class="btn" id="flores">Pedir flores</button>
+            <button class="btn  wow animate__animated animate__fadeInLeft" id="flores">Pedir flores</button>
         </section>
         <!-- ? Flores -->
         <section class="flores">
-            <h3 class="section-title">Flores</h3>
+            <h3 class="section-title wow animate__animated animate__fadeInDown">Flores</h3>
             <div class="slider-container">
                 <button class="slider-btn prev">&#10094;</button>
-                <div class="slider">
+                <div class="slider wow animate__animated animate__fadeIn">
                     <div class="slide">
                         <div class="slide-inner">
                             <img src="sources/Flores/flor1.jpg" alt="Flor 1">
@@ -122,11 +126,11 @@
 
         <!-- ? Ramos -->
         <section class="ramos">
-            <h2 class="section-title">Nuestra Colección de Ramos</h2>
+            <h2 class="section-title animate__animated wow animate__slideInDown">Nuestra Colección de Ramos</h2>
             <p class="ramos-subtitle">Descubre nuestra selección premium de flores frescas</p>
 
             <div class="ramos-container">
-                <div class="ramos-card">
+                <div class="ramos-card wow animate__animated animate__fadeIn">
                     <div class="card-image-container">
                         <img class="slide-img" src="sources/Ramos/ramo1.jpg" alt="Flores Variadas">
                     </div>
@@ -136,7 +140,7 @@
                     </div>
                 </div>
 
-                <div class="ramos-card">
+                <div class="ramos-card wow animate__animated animate__fadeIn">
                     <div class="card-image-container">
                         <img class="slide-img" src="sources/Ramos/ramo2.jpg" alt="Tulipanes">
                     </div>
@@ -146,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="ramos-card">
+                <div class="ramos-card wow animate__animated animate__fadeIn">
                     <div class="card-image-container">
                         <img class="slide-img" src="sources/Ramos/ramo3.jpg" alt="Girasol">
                     </div>
@@ -156,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="ramos-card">
+                <div class="ramos-card wow animate__animated animate__fadeIn">
                     <div class="card-image-container">
                         <img class="slide-img" src="sources/Ramos/ramo4.jpg" alt="Rosas">
                     </div>
@@ -166,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="ramos-card">
+                <div class="ramos-card wow animate__animated animate__fadeIn">
                     <div class="card-image-container">
                         <img class="slide-img" src="sources/Ramos/ramo5.jpg" alt="Petunias">
                     </div>
@@ -176,7 +180,7 @@
                     </div>
                 </div>
 
-                <div class="ramos-card">
+                <div class="ramos-card wow animate__animated animate__fadeIn">
                     <div class="card-image-container">
                         <img class="slide-img" src="sources/Ramos/ramo6.jpg" alt="Rosas Rojas">
                     </div>
@@ -194,9 +198,9 @@
 
         <!-- ? Servicios -->
         <section id="servicios">
-            <h3 class="servicios-title"><span>Servicios</span></h3>
+            <h3 class="servicios-title  wow animate__animated animate__fadeInUp"><span>Servicios</span></h3>
             <div class="servicios-container">
-                <article class="servicios-card">
+                <article class="servicios-card wow animate__animated animate__fadeInLeft">
                     <div>
                         <img src="sources/Servicios/boda.jpg" alt="Boda">
                     </div>
@@ -214,7 +218,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="servicios-card right">
+                <article class="servicios-card right  wow animate__animated animate__fadeInRight">
                     <div>
                         <img src="sources/Servicios/jardineria.jpg" alt="Jardineria">
                     </div>
@@ -232,7 +236,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="servicios-card">
+                <article class="servicios-card  wow animate__animated animate__fadeInLeft">
                     <div>
                         <img src="sources/Servicios/mayoreo.jpg" alt="Mayoreo">
                     </div>
@@ -251,6 +255,10 @@
 
     <!-- ! Footer -->
 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
