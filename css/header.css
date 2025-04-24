@@ -21,8 +21,9 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -78,7 +79,7 @@ header {
 
 .menu {
     position: fixed;
-    top: 76px;
+    top: 75px;
     right: 0;
     width: 100%;
     text-align: center;
