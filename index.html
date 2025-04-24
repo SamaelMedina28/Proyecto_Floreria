@@ -49,8 +49,8 @@
                 <li><a href="#flores" class="menu-link">Flores</a></li>
                 <li><a href="#ramos" class="menu-link">Ramos</a></li>
                 <li><a href="#servicios" class="menu-link">Servicios</a></li>
-                <li><a href="#ubicacion" class="menu-link">Ubicación</a></li>
                 <li><a href="#contacto" class="menu-link">Contacto</a></li>
+                <li><a href="#ubicacion" class="menu-link">Ubicación</a></li>
             </ul>
         </nav>
     </header>
@@ -244,11 +244,56 @@
                         <h4>Mayoreo</h4>
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dignissimos corrupti eos sed enim hic, aliquam ex saepe harum ipsum iusto omnis perferendis, quidem incidunt? Illo, consequatur cum? Cum, eum?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dignissimos corrupti
+                                eos sed enim hic, aliquam ex saepe harum ipsum iusto omnis perferendis, quidem incidunt?
+                                Illo, consequatur cum? Cum, eum?
                             </p>
                         </div>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <!-- ? Contacto -->
+        <section class="contacto">
+            <h2 class="section-title animate__animated wow animate__slideInDown">Contacto</h2>
+            <p class="contacto-subtitle animate__animated wow animate__slideInDown">¡Estamos aquí para ayudarte!</p>
+            <div class="contacto-form">
+                <div class="contacto-form-header">
+                    <h3>Contacta con nosotros</h3>
+                    <p>Responderemos a la brevedad.</p>
+                </div>
+                <form id="contactForm" action="#"  method="post" >
+                    <div class="contacto-form-grid">
+                        <div class="form-group animate__animated wow animate__fadeInLeft">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form-group animate__animated wow animate__fadeInRight">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu email" required>
+                        </div>
+                        <div class="form-group animate__animated wow animate__fadeInLeft">
+                            <label for="phone">Teléfono (opcional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ingresa tu teléfono">
+                        </div>
+                        <div class="form-group animate__animated wow animate__fadeInRight">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="pedido">Pedido</option>
+                                <option value="cotizacion">Cotización</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group full animate__animated wow animate__fadeInUp">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit animate__animated wow animate__fadeInUp">Enviar mensaje</button>
+                </form>
             </div>
         </section>
     </main>
