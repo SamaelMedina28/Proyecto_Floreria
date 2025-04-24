@@ -1,0 +1,12 @@
+.ubicacion p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.ubicacion p:first-of-type {
+    font-size: 1.6rem;
+}
