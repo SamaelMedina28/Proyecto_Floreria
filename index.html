@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--? SEO -->
-    <meta name="description" content="Vanesus">
+    <meta name="description" content="Floreria">
     <meta name="keywords"
-        content="Vanesus, flores, ramos, servicios, ubicacion, contacto, pedir flores, Tijuana, México">
+        content="Floreria, flores, ramos, servicios, ubicacion, contacto, pedir flores, Tijuana, México">
     <meta name="author" content="@DevCode">
     <meta name="theme-color" content="#744a39">
-    <title>Vanesus</title>
+    <title>Floreria</title>
     <!--? Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!--? Google Fonts -->
@@ -36,10 +36,12 @@
     <!-- ! Header -->
     <header class="wow animate__animated animate__fadeInDown">
         <div class="header-container">
-            <div class="logo">
-                <i class="fa-solid fa-leaf"></i>
-                <h1>Vanesus</h1>
-            </div>
+            <a class="logo-link" href="#">
+                <div class="logo">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h1>Floreria</h1>
+                </div>
+            </a>
             <button class="menu-button" id="menu-button" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -60,10 +62,10 @@
         <!-- ? Hero section -->
         <section class="hero">
             <div class="hero-content">
-                <h2 class=" wow animate__animated animate__fadeInDown">Vanesus</h2>
-                <p class=" wow animate__animated animate__fadeIn">La mejor floreria de la ciudad</p>
+                <h2 class=" wow animate__animated animate__fadeInDown">Floreria</h2>
+                <p class=" wow animate__animated animate__fadeInRight">La mejor floreria de la ciudad</p>
             </div>
-            <button class="btn wow animate__animated animate__fadeInLeft" id="flores">Pedir flores</button>
+            <button class="btn  wow animate__animated animate__fadeInLeft" id="flores">Pedir flores</button>
         </section>
         <!-- ? Flores -->
         <section class="flores">
@@ -263,19 +265,22 @@
                     <h3>Contacta con nosotros</h3>
                     <p>Responderemos a la brevedad.</p>
                 </div>
-                <form id="contactForm" action="#"  method="post" >
+                <form id="contactForm" action="#" method="post">
                     <div class="contacto-form-grid">
                         <div class="form-group animate__animated wow animate__fadeInLeft">
                             <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Ingresa tu nombre" required>
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Ingresa tu nombre" required>
                         </div>
                         <div class="form-group animate__animated wow animate__fadeInRight">
                             <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu email" required>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Ingresa tu email" required>
                         </div>
                         <div class="form-group animate__animated wow animate__fadeInLeft">
                             <label for="phone">Teléfono (opcional)</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ingresa tu teléfono">
+                            <input type="tel" id="phone" name="phone" class="form-control"
+                                placeholder="Ingresa tu teléfono">
                         </div>
                         <div class="form-group animate__animated wow animate__fadeInRight">
                             <label for="subject">Asunto</label>
@@ -289,21 +294,66 @@
                         </div>
                         <div class="form-group full animate__animated wow animate__fadeInUp">
                             <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                            <textarea id="message" name="message" class="form-control" rows="5"
+                                placeholder="Escribe tu mensaje..." required></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="btn-submit animate__animated wow animate__fadeInUp">Enviar mensaje</button>
+                    <button type="submit" class="btn-submit animate__animated wow animate__fadeInUp">Enviar
+                        mensaje</button>
                 </form>
             </div>
         </section>
+
+        <!-- ? Ubicación -->
+        <section class="ubicacion" id="ubicacion">
+            <h2 class="section-title animate__animated wow animate__slideInDown">Ubicación</h2>
+            <p class="ubicacion-subtitle animate__animated wow animate__slideInDown">
+                Visítanos en nuestra tienda
+            </p>
+            <p class="ubicacion-address animate__animated wow animate__fadeInUp">
+                Dirección: Calle Ejemplo 123, Tijuana, BC, México
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4541.896935078693!2d-116.96337782557524!3d32.53179269954221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d947c02a52fe0b%3A0xde8837c9322286e0!2sUniversidad%20Aut%C3%B3noma%20de%20Baja%20California!5e0!3m2!1ses-419!2smx!4v1745512310800!5m2!1ses-419!2smx"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+
     </main>
 
     <!-- ! Footer -->
-    <footer>
+    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-content">
-                <h3>Vanesus</h3>
+            <div class="footer-col">
+                <h4>Floreria</h4>
+                <p>La mejor floreria de la ciudad. Calle Ejemplo 123, Tijuana, BC, México.</p>
             </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#flores">Flores</a></li>
+                    <li><a href="#ramos">Ramos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Tel: <a href="tel:+526612345678">+52 661 234 5678</a></p>
+                <p>Email: <a href="mailto:info@floreria.com">info@floreria.com</a></p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-separator" />
+        <div class="footer-bottom">
+            <p>&copy; 2025 Floreria. Todos los derechos reservados.</p>
         </div>
     </footer>
     <script src="js/wow.min.js"></script>
